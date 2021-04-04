@@ -1,0 +1,412 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&display=swap");
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    background-color: rgb(111, 122, 82);
+}
+
+header {
+    min-height: 80px;
+}
+
+.logo {
+    max-width: 130px;
+    border-radius: 50%;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/* home picture */
+
+.homepic {
+    display: flex;
+    justify-content: center;
+}
+
+.homepic img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.button {
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 4px;
+    border-style: solid;
+    padding: 0.5em 1.75em;
+    color: white;
+    background: brown;
+}
+
+.button:hover,
+.button:focus {
+    background: white;
+    color: #2d96ed;
+}
+
+.container {
+    position: relative;
+    top: 85%;
+}
+
+
+/* Top nav bar */
+
+nav {
+    display: none;
+}
+
+nav ul {
+    padding: 0px 10px;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    display: inline-block;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked~nav {
+    display: block;
+}
+
+i.fas.fa-bars {
+    float: right;
+    color: rgb(10, 10, 10);
+    padding: 20px;
+    font-size: 1.5em;
+    display: block;
+}
+
+nav a:hover {
+    color: rgb(10, 10, 10);
+    background-color: white;
+}
+
+
+/* quick links */
+
+.quicklinkdiv {
+    margin: 0;
+    padding: 10px;
+}
+
+.quicklink {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    margin: 1rem;
+    margin-bottom: 0;
+}
+
+.quicklinkul {
+    text-align: center;
+}
+
+i.far.fa-clock {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+i.fas.fa-landmark {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+i.fas.fa-info {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.quicklinktextli {
+    display: inline-block;
+    margin: 1em;
+}
+
+.quicklinktext {
+    text-align: center;
+    margin-top: 0;
+    font-size: 0.8em;
+    padding-left: 0;
+}
+
+.quicklinktext a {
+    text-decoration: none;
+    color: black;
+}
+
+.quicklinkdiv {
+    text-align: center;
+}
+
+.quicklinkul {
+    padding-left: 0;
+}
+
+
+/* pictures */
+
+.text {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+h1 {
+    text-align: center;
+}
+
+.linka {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(18, 18, 19);
+    font-weight: 400;
+}
+
+.linka:hover {
+    color: #2d96ed;
+}
+
+.picsection {
+    border: 5px solid blue;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+
+/* Social icons */
+
+.socialli {
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 20px;
+    color: rgb(238, 239, 245);
+}
+
+.socialul {
+    text-align: center;
+}
+
+
+/* footer */
+
+footer {
+    background-color: black;
+}
+
+.qlul a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500px;
+}
+
+.qlli {
+    list-style: none;
+    padding: 10px;
+}
+
+.qlul {
+    text-align: center;
+}
+
+.qlli a:hover {
+    text-decoration: none;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.home-about-textbox {
+    background-color: white;
+    padding: 2em;
+    width: 100%vm;
+    margin-left: 0%;
+    outline: 2px solid #5d2abf;
+    outline-offset: -2.5em;
+    color: rgb(119, 45, 45);
+    position: relative;
+    text-align: center;
+}
+
+.home-about-textbox h1 {
+    color: #5d2abf;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0em;
+    background: white;
+    padding: 0 0.25em;
+    text-align: center;
+}
+
+.home-about {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 300px;
+    padding: 10px;
+}
+
+.locationtable {
+    text-align: left;
+}
+
+
+/* contact us */
+
+table td {
+    padding: 20px;
+}
+
+.contactli {
+    list-style: none;
+    margin: 20px;
+}
+
+.contactul {
+    background-color: white;
+    padding: 20px;
+}
+
+.contact-column-li {
+    list-style: none;
+    margin: 20px;
+    display: block;
+    position: relative;
+}
+
+.contact-column-ul a {
+    color: white;
+}
+
+.contact-column-ul {
+    background-color: black;
+}
+
+.contactbutton {
+    color: white;
+    border-color: #5d2abf;
+    background-color: #5d2abf;
+    font-size: 1rem;
+    border-width: 4px;
+    padding: 0.2em 1em;
+}
+
+.contactbutton:hover {
+    color: #0a0a0a;
+}
+
+textarea {
+    width: 100%;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+label {
+    color: gray;
+}
+
+.coffee-main li {
+    list-style: none;
+}
+
+@media (min-width: 60em) {
+    .logo {
+        max-width: 200px;
+    }
+    nav {
+        all: unset;
+        font-size: 1.5em;
+    }
+    i.fas.fa-bars {
+        display: none;
+    }
+    nav ul {
+        padding-bottom: 30px;
+    }
+    nav li {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 43rem) {
+    nav li {
+        font-size: 1em;
+    }
+    nav a {
+        padding: 15px;
+    }
+    .container {
+        margin: 20px 20px;
+    }
+    .quicklink {
+        font-size: 2.5em;
+        margin: 1.5rem;
+    }
+    i.fas.fa-info {
+        padding: 10px 25px;
+    }
+    .quicklinktext {
+        font-size: 1.2em;
+    }
+    .quicklinkul {
+        padding-left: 0;
+    }
+    .picsection {
+        border: 5px solid blue;
+        width: 50%;
+        text-align: center;
+        border: none;
+    }
+    .parent {
+        display: flex;
+    }
+    .text {
+        display: inline-block;
+        padding: 2em;
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .mainhomelink {
+        text-align: center;
+    }
+    .imagesize {
+        max-width: 100%;
+        height: 200px;
+        border-radius: 90%;
+    }
+}
